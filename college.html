@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sitaramji Ganorkar Junior College</title>
+  <link rel="icon" type="image/x-icon" href="images/logo.jpeg" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.7/js/tether.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+<!--____________________For Text Font _______________________-->
+<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+<!--____________________For Icon _______________________-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+
+<style>
+/*____________________Title CSS Start____________________*/
+  .mb-1{
+    text-align: center;
+    font-size: 26px;
+    color: #17252A;
+    font-weight: bold;
+  }
+  .sub-title{
+    text-align: center;
+    font-size: 19px;
+    color: #2B7A78;
+    margin-top: 13px;
+  }
+  .sub-title-1{
+    text-align: center;
+    font-size: 19px;
+    color: #17252A;
+  }
+  /*____________________Title CSS End____________________*/
+
+
+  /*____________________Logo CSS Start____________________*/
+  .ima{
+    float: left;
+    width: 130px;
+    height: 130px;
+    margin-top: 20px;
+  }
+  /*____________________Logo CSS End____________________*/
+
+
+  /* ____________________ Navigation Bar CSS Start _______________________ */
+  .fixed-top {
+      position: fixed;
+      top: 100px;
+      right: 0;
+      left: 0;
+      z-index: 1030;
+    }
+  /* ____________________ Navigation Bar CSS End _______________________ */
+
+
+/*____________________Scroll CSS Start____________________*/
+      #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: #17252A;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+      }
+      #myBtn:hover {
+        background-color: #555;
+      }
+    /*____________________Scroll CSS End_____________________*/
+
+
+/*____________________waves CSS start____________________*/
+  @import url(//fonts.googleapis.com/css?family=Lato:300:400);
+  body {
+    margin:0;
+  }
+  h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight:300;
+    letter-spacing: 2px;
+    font-size:48px;
+  }
+  p {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    font-size:14px;
+    color: #333333;
+  }
+  .header {
+    position:relative;
+    text-align:center;
+    background: linear-gradient(to right,#17252A, #2B7178);
+    color:white;
+  }
+  .logo {
+    width:50px;
+    fill:black;
+    padding-right:15px;
+    display:inline-block;
+    vertical-align: middle;
+  }
+  .inner-header {
+    height: 10vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .flex { /*Flexbox for containers*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .waves {
+    position:relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px; /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 150px;
+  }
+  .content {
+    position:relative;
+    height:20vh;
+    text-align:center;
+    background-color: white;
+  }
+  /* Animation */
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% {
+      transform: translate3d(85px,0,0);
+    }
+  }
+  /*Shrinking for mobile*/
+  @media (max-width: 768px) {
+    .waves {
+      height:40px;
+      min-height:40px;
+    }
+    .content {
+      height:30vh;
+    }
+    h1 {
+      font-size:24px;
+    }
+  }
+/*____________________waves CSS end____________________*/
+
+
+</style>
+</head>
+
+
+<body style="background-color:#DEF2FA;">
+<!-- ____________________Title and Logo start____________________-->
+  <div class="panel-heading" >
+        <div class="col-sm-4"></div>
+          <div class="container" >
+                <img class="ima" src="images/website.png" alt="">
+                <blockquote class="blockquote">
+                  <p class="sub-title">Shridhar Pachghare Guruji Dnyanprabodhini Pathrot</p>
+                  <p class="mb-1">SITARAMJI GANORKAR ENGLISH SCHOOL & <br> JUNIOR COLLEGE OF SCIENCE</p>
+                  <p class="sub-title-1">Pathrot, Dist. Amravati (MS) Ph. 9423216007</p>
+                </blockquote>
+            </div>
+        </div>
+<!--____________________Title and Logo end____________________-->
+
+
+<!--____________________Navigation Bar Start____________________-->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #2B7178">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="home.html" style="font-size: 18px;">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown nav-item active ">
+        <a class="nav-link dropdown-toggle" href="#" style="font-size: 18px;" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About Us
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="history.html" style="font-size: 18px;">History</a>
+          <a class="dropdown-item" href="management.html" style="font-size: 18px;">Management</a>
+          <a class="dropdown-item" href="aims.html" style="font-size: 18px;">Aims & Objectives</a>
+          <a class="dropdown-item" href="rules.html"style="font-size: 18px;">Rules & Regulations</a>
+          <a class="dropdown-item" href="features.html" style="font-size: 18px;">Special Features</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown nav-item active">
+        <a class="nav-link dropdown-toggle" href="#" style="font-size: 18px;" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Facilities
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="digital.html" style="font-size: 18px;">Digital Classrooms</a>
+          <a class="dropdown-item" href="lab.html" style="font-size: 18px;">Laboratory</a>
+          <a class="dropdown-item" href="library.html" style="font-size: 18px;">Library</a>
+          <a class="dropdown-item" href="health.html" style="font-size: 18px;">Health Check-up</a>
+          <a class="dropdown-item" href="readingroom.html" style="font-size: 18px;">Reading Room</a>
+        </div>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="gallery.html" style="font-size: 18px;">Gallery</a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="achievements.html" style="font-size: 18px;">Achievements</a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="events.html" style="font-size: 18px;">Events</a>
+      </li>
+
+      <li class="nav-item dropdown nav-item active">
+        <a class="nav-link dropdown-toggle" href="#" style="font-size: 18px;" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Admission
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="school.html" style="font-size: 18px;">School</a>
+          <a class="dropdown-item" href="college.html" style="font-size: 18px;">Junior College</a>
+        </div>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="contact.html" style="font-size: 18px;">Contact Us <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+
+    </div>
+  </nav>
+<!--____________________Nav Bar End____________________-->
+
+
+<!--____________________Scroll Start____________________-->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fas fa-arrow-alt-circle-up"></i>Top
+  </button>
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction(){
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+        mybutton.style.display = "block";
+      }
+      else{
+        mybutton.style.display = "none";
+      }
+    }
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+<!--____________________Scroll End____________________-->
+
+
+ <!--____________________College Content Start ____________________-->
+<div class="card mb-3">
+  <img class="card-img-top" src="images/college/clgbuilding.jpg" alt="College Building">
+  <div class="card-body">
+    <h5 class="card-title" style="text-align: center;">Sitaramji Ganorkar Junior College</h5>
+    <p class="card-text">Classes XI and XII are introduced in the year 2013. All students after obtaining a clear Pass Certificate in the class X Board Examination i.e. ICSE, SSC, CBSE are welcome to join the Junior College. The Junior College offers Science stream. At this level of the school that students have to decide what career they wish in pursue. Our experienced staff guides them in the right direction and let them through this journey of two critical years with dedication and responsibility, ensuring that they are admitted to the universities of their choice after passing out.</p>
+  </div>
+</div>
+
+
+<div class="jumbotron text-center hoverable p-4">
+  <!-- Grid row -->
+  <div class="row" style="margin: auto;">
+    <!-- Grid column -->
+    <div class="col-md-4 offset-md-1 mx-3 my-3">
+      <!-- Featured image -->
+      <div class="view overlay">
+        <img src="images/school/gordemam.jpg" style="border: 2px solid black; height: 350px;" class="img-fluid">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+    </div>
+    <!-- Grid column -->
+    <!-- Grid column -->
+    <div class="col-md-7 text-md-left ml-3 mt-3">
+      <!-- Excerpt -->
+      <h4 class="h4 mb-4"><b>Principal's Message</b></h4>
+      <p class="font-weight-normal">
+        Welcome to the website of Sitaramji Ganorkar English School and Junior college. Our Institution offers comprehensive education from Pre-Primary to Junior College with highly experienced, well qualified, skilled and dedicated staff. We prepare our student to be responsible, self-confident and encourage them to explore their potential to the fullest. We offer a range of opportunities for all our students to achieve excellence in academic, creative, social, cultural, sporting and community endeavours. <br>
+        As the Principal of Sitaramji Ganorkar English School& Junior College, I have privilege of bonding and witnessing amazing transformation of children under the guiding presence of our trustee, teachers, parents and other members of institute. <br>
+        With a long and rewarding history of achievements in academics and extracurricular activities behind us, we surge forward with confidence, pride and enthusiasm. <br>
+        We welcome you to experience the joy of learning at Sitaramji Ganorkar English school & Junior College. <br>
+        God Bless! <br>
+        <h5 class="mt-0">Mrs.S.S. Gorde</h5>
+      </p>
+    </div>
+    <!-- Grid column -->
+  </div>
+  <!-- Grid row -->
+</div>
+
+
+<h3 style="text-align: center;">Faculty</h3>
+<!--Staff Info-->
+<div class="jumbotron text-center hoverable p-4">
+  <!-- Grid row -->
+  <div class="row" style="margin: auto;">
+    <!-- Grid column -->
+    <div class="col-md-4 offset-md-1 mx-3 my-3">
+      <!-- Featured image -->
+      <div class="view overlay">
+        <img src="images/college/nileshsir.jpeg" style="border: 2px solid black; height: 250px;" class="img-fluid">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+    </div>
+    <!-- Grid column -->
+    <!-- Grid column -->
+    <div class="col-md-7 text-md-left ml-3 mt-3">
+      <!-- Excerpt -->
+      <h4 class="h4 mb-4"><b>Prof. Dr. Nilesh Sir</b></h4>
+      <p class="font-weight-normal"><a><strong>Specialisation in Biology</strong></a></p>
+      <p class="font-weight-normal">
+        M.Sc.(Biology), B.Ed, PHD. <br>
+        He has experience of 15 years(Latur).
+      </p>
+    </div>
+    <!-- Grid column -->
+  </div>
+  <!-- Grid row -->
+</div>
+
+<div class="jumbotron text-center hoverable p-4">
+  <!-- Grid row -->
+  <div class="row" style="margin: auto;">
+    <!-- Grid column -->
+    <div class="col-md-4 offset-md-1 mx-3 my-3">
+      <!-- Featured image -->
+      <div class="view overlay">
+        <img src="images/college/singhsir.jpeg" style="border: 2px solid black; height: 250px;" class="img-fluid">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+    </div>
+    <!-- Grid column -->
+    <!-- Grid column -->
+    <div class="col-md-7 text-md-left ml-3 mt-3">
+      <!-- Excerpt -->
+      <h4 class="h4 mb-4"><b>Prof. Jagwinder Singh Sir</b></h4>
+      <p class="font-weight-normal"><a><strong>M.Sc.(Maths)</strong></a></p>
+      <p class="font-weight-normal">
+        M.Sc.(Mathematics)<br>
+        He has experience of 10 years(Kota and Dubai).
+      </p>
+    </div>
+    <!-- Grid column -->
+  </div>
+  <!-- Grid row -->
+</div>
+
+<div class="jumbotron text-center hoverable p-4">
+  <!-- Grid row -->
+  <div class="row" style="margin: auto;">
+    <!-- Grid column -->
+    <div class="col-md-4 offset-md-1 mx-3 my-3">
+      <!-- Featured image -->
+      <div class="view overlay">
+        <img src="images/college/sahabsir.jpeg" style="border: 2px solid black; height: 250px;" class="img-fluid" alt="Sample image for first version of blog listing">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+    </div>
+    <!-- Grid column -->
+    <!-- Grid column -->
+    <div class="col-md-7 text-md-left ml-3 mt-3">
+      <!-- Excerpt -->
+      <h4 class="h4 mb-4"><b>Prof. Er. Sahab Singh Sir</b></h4>
+      <p class="font-weight-normal"><a><strong>B.Tech.</strong></a></p>
+      <p class="font-weight-normal">
+        B.Tech.<br>
+        He has experience of 10 years(Kota).
+      </p>
+    </div>
+    <!-- Grid column -->
+  </div>
+  <!-- Grid row -->
+</div>
+
+<div class="jumbotron text-center hoverable p-4">
+  <!-- Grid row -->
+  <div class="row" style="margin: auto;">
+    <!-- Grid column -->
+    <div class="col-md-4 offset-md-1 mx-3 my-3">
+      <!-- Featured image -->
+      <div class="view overlay">
+        <img src="images/college/manishsir.jpeg" style="border: 2px solid black; height: 250px;" class="img-fluid" alt="Sample image for first version of blog listing">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+    </div>
+    <!-- Grid column -->
+    <!-- Grid column -->
+    <div class="col-md-7 text-md-left ml-3 mt-3">
+      <!-- Excerpt -->
+      <h4 class="h4 mb-4"><b>Prof. Manish Sir</b></h4>
+      <p class="font-weight-normal"><a><strong>M.Sc.(Chemistry)</strong></a></p>
+      <p class="font-weight-normal">
+        M.Sc.(Chemistry)<br>
+        He has experience of 7 years(Kota).
+      </p>
+    </div>
+    <!-- Grid column -->
+  </div>
+  <!-- Grid row -->
+</div>
+
+<div class="jumbotron text-center hoverable p-4">
+  <!-- Grid row -->
+  <div class="row" style="margin: auto;">
+    <!-- Grid column -->
+    <div class="col-md-4 offset-md-1 mx-3 my-3">
+      <!-- Featured image -->
+      <div class="view overlay">
+        <img src="images/college/awsonone.jpeg" style="border: 2px solid black; height: 250px;" class="img-fluid">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+    </div>
+    <!-- Grid column -->
+    <!-- Grid column -->
+    <div class="col-md-7 text-md-left ml-3 mt-3">
+      <!-- Excerpt -->
+      <h4 class="h4 mb-4"><b>Miss.A.W.Sonone</b></h4>
+      <p class="font-weight-normal"><a><strong>M.A.(Mar.)</strong></a></p>
+      <p class="font-weight-normal">
+        M.A.(Mar.), B.Ed.<br>
+      </p>
+    </div>
+    <!-- Grid column -->
+  </div>
+  <!-- Grid row -->
+</div>
+
+<div class="jumbotron text-center hoverable p-4">
+  <!-- Grid row -->
+  <div class="row" style="margin: auto;">
+    <!-- Grid column -->
+    <div class="col-md-4 offset-md-1 mx-3 my-3">
+      <!-- Featured image -->
+      <div class="view overlay">
+        <img src="images/college/mnkapale.jpeg" style="border: 2px solid black; height: 250px;" class="img-fluid">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+    </div>
+    <!-- Grid column -->
+    <!-- Grid column -->
+    <div class="col-md-7 text-md-left ml-3 mt-3">
+      <!-- Excerpt -->
+      <h4 class="h4 mb-4"><b>Miss.M.N.Kapale</b></h4>
+      <p class="font-weight-normal"><a><strong>M.Sc.(Zoo)</strong></a></p>
+      <p class="font-weight-normal">
+        M.Sc.(Zoo), B.Ed.<br>
+      </p>
+    </div>
+    <!-- Grid column -->
+  </div>
+  <!-- Grid row -->
+</div>
+
+<div class="jumbotron text-center hoverable p-4">
+  <!-- Grid row -->
+  <div class="row" style="margin: auto;">
+    <!-- Grid column -->
+    <div class="col-md-4 offset-md-1 mx-3 my-3">
+      <!-- Featured image -->
+      <div class="view overlay">
+        <img src="images/college/pssaurkar.jpeg" style="border: 2px solid black; height: 250px;" class="img-fluid">
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+    </div>
+    <!-- Grid column -->
+    <!-- Grid column -->
+    <div class="col-md-7 text-md-left ml-3 mt-3">
+      <!-- Excerpt -->
+      <h4 class="h4 mb-4"><b>Mr.P.S.Saurkar</b></h4>
+      <p class="font-weight-normal"><a><strong>M.Sc.(Phy.)</strong></a></p>
+      <p class="font-weight-normal">
+        M.Sc.(Physics) Electronics<br>
+      </p>
+    </div>
+    <!-- Grid column -->
+  </div>
+  <!-- Grid row -->
+</div>
+
+
+<div class="container">
+<p><b>Course Duration:</b> The junior college is a two year program.</p>
+<p><b>Medium of Instruction:</b> English</p>
+<p><b>Courses Offered :</b> Science </p>
+<p><b>Subjects Offered :</b> Bi-focal(Electronics, Fisheries) </p>
+<br>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr style="text-align: center;">
+      <th scope="col">Science</th>
+      <th scope="col">Electronic</th>
+      <th scope="col">Fisheries</th>
+    </tr>
+  </thead>
+  <tbody style="text-align: center;">
+    <tr>
+      <td>English</td>
+      <td>English</td>
+      <td>English</td>
+    </tr>
+    <tr>
+      <td>Marathi</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Physics</td>
+      <td>Physics</td>
+      <td>Physics</td>
+    </tr>
+    <tr>
+      <td>Chemistry</td>
+      <td>Chemistry</td>
+      <td>Chemistry</td>
+    </tr>
+    <tr>
+      <td>Mathematics</td>
+      <td>Mathematics</td>
+      <td>Biology</td>
+    </tr>
+    <tr>
+      <td>Biology</td>
+      <td>Electronics</td>
+      <td>Fisheries</td>
+    </tr>
+    <tr>
+      <td>EVS(Graded)</td>
+      <td>EVS(Graded)</td>
+      <td>EVS(Graded)</td>
+    </tr>
+    <tr>
+      <td>Phy. Education(Graded)</td>
+      <td>Phy. Education(Graded)</td>
+      <td>Phy. Education(Graded)</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
+    <h4>Scheme of Examination :</h4>
+    <p>The scheme of Examination is defined by Maharashtra State Board is as follows:</p>
+    <p>1. Class XI examination will be conducted by the college.</p>
+	  <p>2. 80% attendance compulsory for promotion to the next class.</p>
+	  <p>3. Class XII examination will be conducted by Maharashtra State Board.</p>
+    <br>
+
+    <h4>Admission Procedure</h4>
+    <p>1.	Every student admitted in the college will have to pay fees as per the college norms.</p>
+    <p>2.	Amount of fees shall not be refunded if the student leaves the college for any reason after the admission.</p>
+    <p>3.	Parents / Guardians of the candidate will be required to submit.</p>
+    <br>
+
+    <h4>Important:</h4>
+    <p>1.	Admission form</p>
+    <p>2.	Original Transfer Certificate(T.C)</p>
+    <p>3.	Original marklist of last session.</p>
+    <p>4.	Original caste & Income certificate</p>
+    <p>5.	Original migration certificate (for the students coming from other college)</p>
+    <p>6.	Three recent passport sized photograph of the students</p>
+    <p>7.	Prescribed fees</p>
+    <p>8.	Aadhar card of students & parents</p>
+    <br>
+</div>
+
+<!--Admission Button-->
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSdf7O-4x6gLsNrTVAKK-r-uCE3qn7mp2yWriWWvEZ2NXIspdg/viewform" target="_blank" class="btn red block">Click Here For Admission</a>
+<style>
+ @import url(https://fonts.googleapis.com/css?family=Open+Sans:400, 300, 600, 700);
+  .btn {
+    padding: 1em 2.1em 1.1em;
+    border-radius: 3px;
+    margin: 8px 8px 8px 8px;
+    color: black;
+    background-color: #fbdedb;
+    display: inline-block;
+    background: #e74c3c;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+    position: relative;
+  }
+  .btn:hover, .btn:focus {
+    opacity: 0.8;
+  }
+  .btn:active {
+    -webkit-transform: scale(0.80);
+    -moz-transform: scale(0.80);
+    -ms-transform: scale(0.80);
+    -o-transform: scale(0.80);
+    transform: scale(0.80);
+  }
+  .btn.block {
+    display: block !important;
+  }
+  /* Colours */
+  .red {
+    background-color: darkturquoise;
+  }
+</style>
+
+<!--Video Start-->
+<div class="embed-responsive embed-responsive-21by9">
+    <iframe class="embed-responsive-item" src="collegevideo.mp4"></iframe>
+  </div>
+<!--Video End-->
+
+
+<!--____________________College Content End____________________-->
+
+
+<!--____________________Waves Start____________________-->
+  <div class="header">
+    <div>
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#def2f1" />
+        </g>
+      </svg>
+    </div>
+  </div>
+<!--_______________________ Waves End _____________________________-->
+
+
+
+<!--_______________________Footer Start _____________________________-->
+<footer class="page-footer font-small blue-grey lighten-5" style="background-color: #DEF2F1">
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+    <!-- Grid row -->
+    <div class="row mt-3 dark-grey-text">
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">Another Branch</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <h6 class="text-uppercase font-weight-bold"> Balshivaji English School</h6>
+        <p>Anjangaon Surji, Dist.Amravati<br>balshivaji02@gmail.com<br>07224-241010</p>
+      </div>
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Know Us</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a class="dark-grey-text">Broucher</a>
+        </p>
+        <p>
+          <a class="dark-grey-text">Prospectus</a>
+        </p>
+        <p>
+          <a class="dark-grey-text">Baghban</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="achievements.html">Result</a>
+        </p>
+      </div>
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a class="dark-grey-text" href="home.html">Home</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="history.html">About Us </a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="college.html">Junior College</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="https://docs.google.com/forms/d/e/1FAIpQLSdf7O-4x6gLsNrTVAKK-r-uCE3qn7mp2yWriWWvEZ2NXIspdg/viewform" target="_blank">Admission Form</a>
+        </p>
+      </div>
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fas fa-home mr-3"></i>Pathrot 444808</p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i>s.g.englishschool@gmail.com</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i>9326883481</p>
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+  </div>
+  <!-- Footer Links -->
+  <div style="background-color: black;">
+    <div class="container">
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h6 class="mb-0" style="color:#def2f1">Get connected with us on social networks!</h6>
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right" style="color: aqua">
+          <!-- Facebook -->
+          <a class="fb-ic" href="https://www.facebook.com/Sitaramji-Ganorkar-English-school-Junior-college-1270873269662066" target="_blank">
+            <i class="fab fa-facebook-f white-text mr-4"> </i>
+          </a>
+          <!-- WhatsApp -->
+          <a href="https://wa.me/+919326883481/" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row-->
+    </div>
+  </div>
+  <!-- Copyright -->
+  <div class="footer-copyright text-center text-black-50 py-3">© 2020 Copyright:
+    <a class="dark-grey-text" href="\website\ourTeam\webster.html" target="_blank">WebSter</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!--_______________________Footer End_____________________________-->
+
+    </body>
+</html>
